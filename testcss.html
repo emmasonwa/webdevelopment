@@ -1,0 +1,173 @@
+<html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My First Web Site</title> 
+
+<style>   
+body 
+{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color: #000000; 
+background-color: #FFFFFF;
+margin-left: 10px;
+margin-top: 0;
+}
+
+h1 
+{  
+font-size: 16px; 
+margin-bottom:0;
+}
+
+p  
+{
+font-size: 12px; 
+margin-top: 0;
+}
+
+a {color: #759F81; text-decoration: none;}
+a:visited {color: #91C19F; text-decoration: none;}
+a:hover {color: #B2AC79; text-decoration: underline;}
+
+
+#header {
+position: relative;
+margin: auto;
+border-left: 2px solid gray;
+border-right: 2px solid gray;
+border-top: 2px solid gray;
+width:100%; 
+height: 75px;
+background-color: #CCCCCC;
+max-width: 1024px;
+}
+
+#nav {
+position: relative;
+width: 100%; 
+height: 40px;
+margin: auto;
+border-left: 2px solid gray;
+border-right: 2px solid gray;
+border-top: 2px solid gray;
+background-color: red;
+max-width: 1024px;
+}
+
+#nav ul {  
+padding-top: 5px;
+padding-left: 10px;
+margin: 0px;
+list-style-type: none;
+}  
+
+#nav li {  
+padding-right: 25px;
+display: inline;
+}             
+
+#nav a {color: white;  font-size: 24px; font-weight: bold; text-decoration: none}
+#nav a:visited {color: white; text-decoration: none}
+#nav a:hover {color: #666666; text-decoration: none}
+            
+#section {
+position: relative;
+width:100%; 
+background-color: white; 
+margin: auto;;
+border: 2px solid gray;
+max-width: 1024px;
+}
+
+#footer {
+position: relative;
+width:100%; 
+height: 40px;
+background-color: #cccccc; 
+margin: auto;
+border-left: 2px solid gray;
+border-right: 2px solid gray;
+border-bottom: 2px solid gray;
+max-width: 1024px;
+} 
+    
+.small {
+font-size: 8px;
+font-style: italic;
+}
+
+@media only screen and (max-width : 480px) {
+    
+    #nav {
+        height: 30px;  
+    }
+    #nav a {
+        font-size: 14px; 
+    }
+    }
+    
+   
+
+    
+</style>
+</head> 
+
+<body bgcolor="beige" text="#000000" link="#9C2994" vlink="#089494">  					
+<div id="header"> 
+<h1>Cindy's Web Page</h1>	
+</div> 
+
+<div id="nav"> 
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="links.html">Links</a></li>
+</ul> 
+</div> 
+
+<div id="section">
+<p>Welcome to My First Web Site</p>
+
+<p><img src="cindy.jpg" /></p>	<!-- include your own image -->	
+
+<h2>Introduction</h2>   
+<p>This is my place on the Web to let you know what is going on with me!</p>														
+
+<h2>Education</h2>															
+<p>I am a professor at <a href="http://www.txstate.edu" target="_blank">Texas State University</a>. I have attended the following universities:</p>
+<ul>
+<li><a href="http://www.unc.edu" target="_blank">University of North Carolina at Chapel Hill</a> - Bachelor of Science in Business Administration</li>
+<li><a href="http://www.richmond.edu" target="_blank">University of Richmond</a> - Master of Business Administration</li>
+<li><a href="http://www.utexas.edu" target="_blank">University of Texas at Austin</a> - Ph.D. in Mass Communication</li>
+</ul>
+
+<h2>Hobbies</h2>
+<p>I enjoy live music, tacos and outdoor activities. Visit my <a href="about.html">About page</a> for more details.</p>
+<table border="2" width="600" align="center" >
+<tr>
+ <td><b>My favorite TV Shows</b></td>
+ <td><b>My favorite Musicians</b></td>
+</tr>
+<tr>
+ <td><a href="http://www.cc.com/shows/the-daily-show-with-trevor-noah" target="_blank">The Daily Show</a></td><!-- can include links on text in table cells -->
+ <td><a href="http://www.spoontheband.com/" target="_blank">Spoon</a></td>
+</tr>
+<tr>
+ <td><a href="http://abc.go.com/shows/scandal" target="_blank">Scandal</td>
+ <td><a href="http://www.old97s.com" target="_blank">Old 97's</a></td>
+<tr>
+ <td><a href="http://www.fox.com/EMPIRE" target="_blank">Empire</a></td>
+ <td><a href="http://wilcoworld.net/" target="_blank">Wilco</a></td>
+</tr>
+</table>
+			
+<p>For more information, you can email me at <a href="mailto:croyal@txstate.edu">croyal@txstate.edu</a>.</p>	
+</div>
+
+<div id="footer"><!-- footer div -->
+<p class="small">Copyright 2016</p>
+</div>
+</body>
+</html>
+

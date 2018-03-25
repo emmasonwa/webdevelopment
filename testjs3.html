@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>JavaScript Examples</title>
+</head>
+<body>
+<form id="myform">
+<select id="mycar"> 
+<option value="ford">Ford</option> 
+<option value="volvo">Volvo</option> 
+<option value="saab">Saab</option> 
+</select>
+
+</form>
+<p id="msg">This will change</p>
+
+<script>
+document.getElementById("myform").onchange = function() {
+car = document.getElementById("mycar").value;
+document.getElementById("msg").innerHTML = "You drive a " + car ;
+
+}
+
+
+</script>
+
+</body>
+</html>

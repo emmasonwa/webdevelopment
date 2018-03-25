@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>JavaScript Examples</title>
+</head>
+<body>
+    <select id="mymonth"> 
+<option>Pick a month</option>
+<option value="Jan">January</option> 
+<option value="Feb">February</option> 
+</select>
+
+<p id="msg"></p>
+
+<script>
+document.getElementById("mymonth").onchange = function() {
+
+  
+data = [ { "incnum": 16002735, "month": "Jan", "day": 10, "battalion": "B5", "status": "Code 3", "priority": "3F", "unit": "ENG01", "district": 9, "lat": 30.228627, "long": -97.746432 }, { "incnum": 16002786, "month": "Jan", "day": 10, "battalion": "B3", "status": "Code 3", "priority": "3F", "unit": "ENG14", "district": 1, "lat": 30.300323, "long": -97.640077 }, { "incnum": 16002786, "month": "Feb", "day": 10, "battalion": "B3", "status": "Left Blank", "priority": "3F", "unit": "QNT18", "district": 1, "lat": 30.300323, "long": -97.640077 } ];
+    
+document.getElementById("msg").innerHTML = "";  
+    
+month = document.getElementById("mymonth").value;
+
+for(i=0; i<data.length; i++)
+    {
+        if(data[i].month == month){
+        
+        document.getElementById("msg").innerHTML += data[i].incnum + " " + data[i].lat + " " + data[i].long + "<br>";  
+    }
+    }
+    
+}
+
+
+</script>
+
+</body>
+</html>

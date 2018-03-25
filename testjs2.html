@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>JavaScript Examples</title>
+</head>
+<body>
+<form id="myform">
+    <p>Name: <input type="text" id="myname"></p>
+    <button type="submit" value="Submit">Submit</button>
+</form>
+<p id="msg">This will change</p>
+
+<script>
+document.getElementById("myform").onsubmit = function() {
+name = document.getElementById("myname").value;
+document.getElementById("msg").innerHTML = "Hello " + name ;
+return false; 
+}
+
+
+</script>
+
+</body>
+</html>
